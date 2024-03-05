@@ -25,12 +25,33 @@ def inkomsten_totaal(inkomsten):
     btw=0.09
     btwBedrag=inkomsten * btw 
     totaalBtwIn=inkomsten+btwBedrag
-    
     resultaat="Het totaal van alle inkomsten van deze week is " f"{totaalBtwIn} " "euro waarover " f"{btwBedrag} " "euro btw betaald dient te worden."
     print(resultaat)
+
 #om het totaal te bekomen bij het aanroepen van de functie heb ik 2 "" geplaatst om niet terug de inkomsten te moeten  ingeven
 #dus print(inkomsten_totaal(inkomsten)) werkt niet 
+
 print(inkomsten_totaal(""))
+
+def laag_en_hoog(mijn_lijst):
+    #na de goede output komt ook 'None' te staan?
+    mijnInkomsten=[220, 430, 125, 160, 205, 90, 345]
+    Laagste=min([220, 430, 125, 160, 205, 90, 345])
+    Hoogste=max([220, 430, 125, 160, 205, 90, 345])
+    print(Laagste, Hoogste)
+    
+print(laag_en_hoog(""))
+
+
+def gemiddelde(Mijn_lijst):
+    #na de goede output komt ook 'None' te staan?
+    mijnInkomsten=sum([220, 430, 125, 160, 205, 90, 345])/7
+    
+    print(mijnInkomsten)
+print(gemiddelde(""))
+
+
+    
 
 
 
