@@ -22,9 +22,13 @@ print(Aanbieding_1())
 def inkomsten_totaal(inkomsten):
     #na de goede output komt ook 'None' te staan?
     inkomsten=sum([220, 430, 125, 160, 205, 90, 345])
-
-    print(inkomsten)
-#om het totaal te bekomen heb ik 2 "" geplaatst om niet terug de inkomsten te moeten  ingeven
+    btw=0.09
+    btwBedrag=inkomsten * btw 
+    totaalBtwIn=inkomsten+btwBedrag
+    
+    resultaat="Het totaal van alle inkomsten van deze week is " f"{totaalBtwIn} " "euro waarover " f"{btwBedrag} " "euro btw betaald dient te worden."
+    print(resultaat)
+#om het totaal te bekomen bij het aanroepen van de functie heb ik 2 "" geplaatst om niet terug de inkomsten te moeten  ingeven
 #dus print(inkomsten_totaal(inkomsten)) werkt niet 
 print(inkomsten_totaal(""))
 
