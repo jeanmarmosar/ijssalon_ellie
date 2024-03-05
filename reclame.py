@@ -45,9 +45,13 @@ print(laag_en_hoog(""))
 
 def gemiddelde(Mijn_lijst):
     #na de goede output komt ook 'None' te staan?
-    mijnInkomsten=sum([220, 430, 125, 160, 205, 90, 345])/7
     
-    print(mijnInkomsten)
+    Mijn_lijst=[220, 430, 125, 160, 205, 90, 345]
+    aantal=len(Mijn_lijst)
+    GemVerkoop=sum(Mijn_lijst)/aantal
+    #print(GemVerkoop)
+    GemiddeldeInkomstenDezeWeek = "De gemiddelde inkomsten deze week zijn " f"{GemVerkoop:.0f} ""euro."
+    print(GemiddeldeInkomstenDezeWeek)
 print(gemiddelde(""))
 
 
