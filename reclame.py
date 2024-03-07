@@ -74,9 +74,20 @@ def Meervoudig(invoer_Lijst):
 print(Meervoudig(laag_en_hoog))
 
 def combinatie(invoer_lijst_2):
+    #uw oplossing gekopieerd via bemerkingen bij opgave 12
+    #import toch uit algemene_functies
+    #deze
     korte_lijst = laag_en_hoog(invoer_lijst_2)
     uitvoer = mijn_functie_2(korte_lijst[0], korte_lijst[1])
     return uitvoer
+    #Ik weet de juiste functie niet aan te roepen na menig poging
+    print(mijn_functie_2(korte_lijst()))
+
+
+      
+
+
+
 
 
 
