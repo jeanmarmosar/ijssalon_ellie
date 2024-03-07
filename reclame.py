@@ -1,4 +1,8 @@
 
+from Algemene_functies import mijn_functie_2
+
+
+
 def Aanbieding_1():  
    #na de goede output komt ook 'None' te staan?
    #3.60 met :.2f gelukt
@@ -33,14 +37,17 @@ def inkomsten_totaal(inkomsten):
 
 print(inkomsten_totaal(""))
 
+
 def laag_en_hoog(mijn_lijst):
+   
     #na de goede output komt ook 'None' te staan?
-    mijnInkomsten=[220, 430, 125, 160, 205, 90, 345]
+    mijn_lijst=[220, 430, 125, 160, 205, 90, 345]
     Laagste=min([220, 430, 125, 160, 205, 90, 345])
     Hoogste=max([220, 430, 125, 160, 205, 90, 345])
     print(Laagste, Hoogste)
     
 print(laag_en_hoog(""))
+
 
 
 def gemiddelde(Mijn_lijst):
@@ -53,6 +60,31 @@ def gemiddelde(Mijn_lijst):
     GemiddeldeInkomstenDezeWeek = "De gemiddelde inkomsten deze week zijn " f"{GemVerkoop:.0f} ""euro."
     print(GemiddeldeInkomstenDezeWeek)
 print(gemiddelde(""))
+
+def Meervoudig(invoer_Lijst):
+    #na de goede output komt ook 'None' te staan?
+    
+    invoer_Lijst=[10,5,3,2,1,2,9]
+    laagstewaarde=min(invoer_Lijst)
+    hoogstewaarde=max(invoer_Lijst)
+    print(laagstewaarde)
+    print (hoogstewaarde)
+#vreemd dat de parameter laag en hoog hieronder toch de juiste waarde geeft
+#niettegenstaande ik deze niet als global declareerde
+print(Meervoudig(laag_en_hoog))
+
+def combinatie(invoer_lijst_2):
+    korte_lijst = laag_en_hoog(invoer_lijst_2)
+    uitvoer = mijn_functie_2(korte_lijst[0], korte_lijst[1])
+    return uitvoer
+
+
+
+
+
+
+
+   
 
 
     
