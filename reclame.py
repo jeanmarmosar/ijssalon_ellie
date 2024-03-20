@@ -84,7 +84,11 @@ def combinatie(invoer_lijst_2):
     print(mijn_functie_2(korte_lijst()))
 
 
-      
+
+
+
+
+    
 
 
 
